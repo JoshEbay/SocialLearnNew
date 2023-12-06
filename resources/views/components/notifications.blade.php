@@ -40,13 +40,13 @@
     <div class="space-y-3 h-3/4 overflow-y-auto rounded-xl transparent-scrollbar">
 
             @for ($i = 0; $i < count($users); $i++)
-            <div class="flex items-center text-sm">
+            <div class="flex items-center text-sm text-white">
                 {{-- <div class="relative h-10 w-20"> --}}
                     <img src="images/{{$users[$i]}}" alt="User Profile Image" class="object-cover w-10 h-10 rounded-full">
                     {{-- <i class="material-icons absolute right-1 bottom-0.5 text-base">favorite</i> --}}
                 {{-- </div> --}}
                 <div class="ml-2">
-                    <p><span class="font-semibold">{{$names[$i]}}</span> {{$actions[$i]}} <span class="font-semibold text-yellow"> {{$titles[$i]}}</span>.</p>
+                    <p><span class="font-semibold text-white">{{$names[$i]}}</span> {{$actions[$i]}} <span class="font-semibold text-yellow"> {{$titles[$i]}}</span>.</p>
                     <p class="text-xs text-gray-500">{{$timestamp[$i]}}</p>
                 </div>
                 

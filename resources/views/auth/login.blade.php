@@ -1,4 +1,6 @@
 <x-guest-layout>
+<img src="images/logo-black.png" class="h-fit max-w-2 p-4" alt="SociaLearn Logo" />
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
